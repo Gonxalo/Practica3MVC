@@ -13,10 +13,10 @@ namespace practica3MVC.Controllers
         // GET: /Estado/
         public ActionResult Index()
         {
-            Contexto conexion = new Contexto();
+                Contexto conexion = new Contexto();
             //creamos la lista
             List<Municipio> municipio = conexion.Municipio.ToList();
-            return View();
+            return View(municipio);
         }
 
         public ActionResult Alta()
