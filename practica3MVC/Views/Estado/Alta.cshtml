@@ -1,0 +1,12 @@
+﻿@model practica3MVC.Models.Municipio
+
+@using (Html.BeginForm())
+{
+    <label>Nombre</label>
+    @Html.TextBoxFor(x => x.Nombre); //expresion linq
+    <br />
+    <label>Cantidad Habitante: </label>
+    @Html.TextBoxFor(x => x.CantidadHabitante)
+    
+    <button type="submit">Alta</button>
+}
